@@ -171,8 +171,7 @@ export default {
     margin: 0;
     padding: 1.5rem;
     font-size: 2.5rem;
-    font-family: "Lucida Console", sans-serif;
-    font-weight: 100;
+    font-family: "Inconsolata", monospace;
     overflow-x: auto;
   }
 
@@ -186,7 +185,6 @@ export default {
   button {
     min-height: 50px;
     font-size: 1.25rem;
-    font-weight: 100;
     border: none;
     border-radius: 0.3125rem;
     cursor: pointer;
