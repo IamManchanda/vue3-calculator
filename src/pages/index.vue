@@ -18,4 +18,10 @@ export default {
 <style lang="scss" scoped>
 .page-index {
 }
+
+@media screen and (max-width: 767px) {
+  .page-index {
+    width: 100vw;
+  }
+}
 </style>

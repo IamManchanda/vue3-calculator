@@ -231,6 +231,7 @@ export default {
 @media screen and (max-width: 767px) {
   .component-calculator-container {
     width: 95%;
+    margin: 0 auto;
   }
 }
 </style>
