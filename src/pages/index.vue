@@ -1,29 +1,16 @@
 <template>
-  <div class="page-index"></div>
+  <div class="page-index">
+    <calculator-container />
+  </div>
 </template>
 
 <script>
-//#region Imports
-import { reactive, toRefs } from "vue";
-//#endregion
+import CalculatorContainer from "../components/calculator-container";
+
 export default {
   name: "page-index",
-  setup() {
-    //#region Reactive References
-    const state = reactive({});
-    //#endregion
-
-    //#region Watchers
-    //#endregion
-
-    //#region Lifecycle hooks
-    //#endregion
-
-    //#region Methods
-    //#endregion
-    return {
-      ...toRefs(state),
-    };
+  components: {
+    CalculatorContainer,
   },
 };
 </script>
