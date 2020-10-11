@@ -176,23 +176,6 @@ export default {
     overflow-x: auto;
   }
 
-  /* Custom Scrollbar */
-  ::-webkit-scrollbar {
-    width: 0.25rem;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-
   .calculator-buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -208,20 +191,19 @@ export default {
     border-radius: 0.3125rem;
     cursor: pointer;
     background-color: rgb(199, 199, 199);
-  }
 
-  button:hover,
-  button:focus {
-    filter: brightness(110%);
-    border: 0.0625rem solid #ccc;
-  }
+    &:hover {
+      filter: brightness(110%);
+      border: 0.0625rem solid #ccc;
+    }
 
-  button:active {
-    transform: translateY(0.0625rem);
-  }
+    &:active {
+      transform: translateY(0.0625rem);
+    }
 
-  button:focus {
-    outline: none;
+    &:focus {
+      outline: none;
+    }
   }
 
   .operator {
@@ -233,11 +215,10 @@ export default {
   .clear {
     background-color: rgb(255, 40, 40);
     color: white;
-  }
 
-  .clear:hover,
-  .clear:focus {
-    filter: brightness(90%);
+    &:hover {
+      filter: brightness(90%);
+    }
   }
 
   .equal-sign {
